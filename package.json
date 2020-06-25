@@ -1,0 +1,23 @@
+{
+  "name": "is-valid-http",
+  "version": "1.0.0",
+  "description": "Check if a string is a HTTP/HTTPS ",
+  "license": "MIT",
+  "repository": "Hbkhan/is-valid-http",
+  "main": "src/index.js",
+  "author": "Habib (http://hbkhan.com/)",
+  "bugs": {
+    "url": "https://github.com/Hbkhan/is-valid-http/issues"
+  },
+  "keywords": [
+    "is",
+    "http",
+    "https",
+    "url",
+    "uri",
+    "validate",
+    "string",
+    "check",
+    "regex"
+  ]
+}
