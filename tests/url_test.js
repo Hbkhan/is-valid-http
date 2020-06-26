@@ -22,3 +22,30 @@ describe('isUrlCheck', function () {
         done();
     });
 });
+
+describe('urlLengthCheck', function () {
+    it('should check url length', function (done) {
+        var hugeWordLen = 2000;
+        var hugeWord = 'a'.repeat(hugeWordLen);
+        var url = 'http://google.' + hugeWord;
+        assert.equal(isUrlCheck(url), true);
+        var hugeWordLen = 3000;
+        var hugeWord = 'a'.repeat(hugeWordLen);
+        var url = 'http://google.' + hugeWord;
+        assert.equal(isUrlCheck(url), false);
+        var hugeWordLen = 3000;
+        var hugeWord = '.a'.repeat(hugeWordLen);
+        var url = 'http://google.' + hugeWord;
+        assert.equal(isUrlCheck(url), false);
+        var hugeWordLen = 3000;
+        var hugeWord = '/a'.repeat(hugeWordLen);
+        var url = 'http://google.' + hugeWord;
+        assert.equal(isUrlCheck(url), false);
+        var hugeWordLen = 1000;
+        var hugeWord = '/a'.repeat(hugeWordLen);
+        var url = 'http://google.com/' + hugeWord;
+        assert.equal(isUrlCheck(url), true);
+
+        done();
+    });
+});

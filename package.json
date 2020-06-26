@@ -1,6 +1,6 @@
 {
   "name": "is-valid-http",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Check if a string is a HTTP/HTTPS ",
   "license": "MIT",
   "repository": "Hbkhan/is-valid-http",
